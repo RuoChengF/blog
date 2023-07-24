@@ -25,9 +25,9 @@
 <script>
 export default {
   methods: {
-    handleJump(index){
-        this.$router.push({name:'photo-photo'})
-    }
+    // handleJump(index){
+    //     this.$router.push({name:'photo-photo'})
+    // }
   },
 }
 </script>
