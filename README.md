@@ -1,69 +1,45 @@
 # blog
+## 目录结构
+> blog
+├── README.md
+├── assets
+│   ├── common.css
+│   ├── img
+│   │   └── 1.jpg
+│   └── result.json
+├── components
+│   ├── NuxtLogo.vue
+│   └── Tutorial.vue
+├── layouts
+│   └── Myblog.vue
+├── nuxt.config.js
+├── package-lock.json
+├── package.json
+├── pages
+│   ├── index.vue
+│   └── photo
+│       └── photo.vue
+├── plugins
+│   └── element-ui.js
+├── static
+│   └── favicon.ico
+├── store
+│   └── README.md
+└── tree.md
 
-## Build Setup
+## 项目介绍 
+腾讯云 Cloud Studio 实战训练营！在本次训练营中，我们将通过沉浸式体验，带您一步步编写一个基于 Nuxt.js 的静态博客系统。无论您是初学者还是有一定编程经验的开发者，本训练营都将为您提供一个深入了解和掌握 Nuxt.js 技术以及静态网站开发的机会。
+使用 Nuxt.js 作为前端框架，我们将能够充分利用其强大的功能和优势，快速搭建一个高效、可扩展的静态博客系统。Nuxt.js 是基于 Vue.js 的服务端渲染框架，结合了单页应用程序（SPA）和静态生成模式（SSG），使得我们可以轻松构建出具有良好用户体验的博客系统。
 
-```bash
-# install dependencies
-$ npm install
+## 使用方法
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+1. 使用nvm 下载安装node 版本 
+    - nvm install 19.0.0
+    - nvm use 19.0.0
+2. 下载依赖
+    - npm install 
+3. 运行
+   - npm run dev 
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
-
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+4. 打包 
+    - npm run generate
