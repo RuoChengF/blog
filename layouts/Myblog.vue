@@ -15,8 +15,8 @@
 
      <div class="right">
        <el-row :gutter="20">
-        <el-col :span="12"><span class="mynav">登录</span></el-col>
-        <el-col :span="12"><span class="mynav">注册</span></el-col>
+        <el-col :span="12"><span  @click="handleGoLogin(1)" class="mynav">登录</span></el-col>
+        <el-col :span="12" ><span @click="handleGoLogin(2)" class="mynav">注册</span></el-col>
       </el-row>
      </div>
     </el-card>
@@ -34,11 +34,11 @@ export default {
           route:'index'
          },
          {
-          label:'相册',
+          label:'博客画廊',
           route:'photo'
          },
          {
-          label:'关于我',
+          label:'我的画廊',
           route:'about'
          },
       ]
@@ -47,6 +47,10 @@ export default {
   methods: {
     handleJump(url){
         this.$router.push({name:url})
+    },
+    handleGoLogin(idx){
+               this.$router.push({name:'login'})
+
     }
   },
 }

@@ -15,6 +15,10 @@
             </div>
           </div>
         </el-card>
+
+        <el-card class="box-card">
+          <clock />
+        </el-card>
       </el-aside>
       <el-main>
         <el-card v-for="(item, index) in blogJson" :key="index">
@@ -41,6 +45,8 @@
 <script>
 import pho from "../assets/img/1.jpg";
 import blogJson from "../assets/result.json";
+import clock from "../components/Clock.vue"
+
 export default {
   layout: "Myblog",
   data() {
@@ -54,6 +60,9 @@ export default {
         如果你对 Python 或前端技术有任何疑问或需要帮助，欢迎与我联系。无论是入门指导、项目建议还是技术咨询，
         我都会竭诚为您提供帮助。让我们一起探索技术的魅力，共同成长和进步！`,
     };
+  },
+  component(){
+    clock
   },
   methods: {
     handleLink(item){
