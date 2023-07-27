@@ -1,5 +1,10 @@
 # blog
 
+# 项目来源
+本项目来源于[《腾讯云 Cloud Studio 实战训练营》](https://marketing.csdn.net/p/06a21ca7f4a1843512fa8f8c40a16635)的参赛作品
+该作品在腾讯云 [Cloud Studio](https://www.cloudstudio.net/?utm=csdn) 中运行无误。
+
+
 
 # MyBlog 项目
 
