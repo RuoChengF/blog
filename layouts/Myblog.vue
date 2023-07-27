@@ -49,7 +49,7 @@ export default {
         this.$router.push({name:url})
     },
     handleGoLogin(idx){
-               this.$router.push({name:'login'})
+         this.$router.push({name:'login'})
 
     }
   },
